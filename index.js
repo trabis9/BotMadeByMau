@@ -18,12 +18,12 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: '📍SAMU330📍',
-    instagram: 'https://www.instagram.com/Samu3_30/',
-    nomer: 'wa.me/+529984907794',
+    A187: '📍MAU📍',
+    instagram: 'https://www.instagram.com/Trabis9/',
+    nomer: 'wa.me/+529991256032',
     aktif: '21 DEC',
-    youtube: 'https://www.youtube.com/channel/UCqPXxG2ZdDe_ugOqMHDRMqg?view_as=subscriber',
-    whatsapp: 'https://wa.me+529984907794',
+    youtube: 'https://www.youtube.com/channel/UCUS7VNfPD3kR16QAPlsaumg',
+    whatsapp: 'https://wa.me+529991256032',
     tanggal: `FECHA: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
@@ -109,7 +109,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, subscribe Samu330`)
+   console.log(`[ ${time} ] QR code is ready, subscribe Mau`)
 })
 
 client.on('credentials-updated', () => {
@@ -127,7 +127,7 @@ client.connect();
 
 client.on('message-status-update', json => {
    const participant = json.participant ? ' (' + json.participant + ')' : ''
-   console.log(`[ ${time} ] => bot by ig:@_sadboy.ig`)
+   console.log(`[ ${time} ] => bot by ig:@Trabis9`)
 })
 
 client.on('message-new', async (m) => {
@@ -182,7 +182,7 @@ client.on('message-new', async (m) => {
            ytdl('mp3', value)
                .then(data => {
                    const { judul, size, hasil: link } = data
-                   let hasil = `HOLA AQUI ESTA EL LINK DE DESCARGA DE SU MSC\nCLIQUE NO LINK ABAIXO:\nMUSICA: ${judul}\n\nTamaño De audio: ${size}\n\nLink: ${link}`
+                   let hasil = `AQUI ESTA EL LINK DE DESCARGA DE SU MSC\nCLIQUE NO LINK ABAIXO:\nMUSICA: ${judul}\n\nTamaño De audio: ${size}\n\nLink: ${link}`
                    client.sendMessage(id, '[ESPERE UN MOMENTO...', MessageType.text)
                    client.sendMessage(id, hasil, MessageType.text)
                })
@@ -194,8 +194,8 @@ client.on('message-new', async (m) => {
            ytdl('mp4', value)
                .then(data => {
                    const { judul, size, hasil: link } = data
-                   let hasil = `HOLA AQUI ESTA EL LINK DE DESCARGA DE MSC\nCLIQUE NO LINK ABAIXO:\nMUSICA: ${judul}\n\nTamaño De audio: ${size}\n\nLink: ${link}`
-                   client.sendMessage(id, '[ESPERE UN MOMENTOUM POUCO...', MessageType.text)
+                   let hasil = `AQUI ESTA EL LINK DE DESCARGA DE MSC\nCLIQUE NO LINK ABAIXO:\nMUSICA: ${judul}\n\nTamaño De audio: ${size}\n\nLink: ${link}`
+                   client.sendMessage(id, '[ESPERE UN MOMENTO...', MessageType.text)
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -218,7 +218,7 @@ client.on('message-new', async (m) => {
            tiktokdl(value)
                .then(data => {
                     const { url, nama, durasi, deskripsi } = data
-                    let hasil = `✄1�71 ￄ 1/77 Sucess !!! Clique el link para descargar los resultados! \nClique no link abaixo🗡️\n\nTítulo: ${deskripsi} \n\nDurasion: ${durasi}\n\nNome: ${nama}\n\nUrl: ${url}`;
+                    let hasil = `✄1�71 ￄ 1/77 Sucess !!! Toca el link para descargar los resultados! \nClique no link abaixo🗡️\n\nTítulo: ${deskripsi} \n\nDurasion: ${durasi}\n\nNome: ${nama}\n\nUrl: ${url}`;
                     client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -360,7 +360,7 @@ client.on('message-new', async (m) => {
            lirik(value)
                .then(data => {
                    const { hasil: lirik } = data
-                   let hasil = `📍Letra de música📍 *${value}* \n\n\n${lirik}`
+                   let hasil = `📍Letra de la canción📍 *${value}* \n\n\n${lirik}`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -371,7 +371,7 @@ client.on('message-new', async (m) => {
            fb(value)
                .then(data => {
                    const { resultHD, resultSD } = data
-                   let hasil = `Eliga la resolucion😙 \n\n\n HD ${resultHD} \n\n\n SD ${resultSD}`
+                   let hasil = `Eliga la resolucion \n\n\n HD ${resultHD} \n\n\n SD ${resultSD}`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -399,7 +399,7 @@ client.on('message-new', async (m) => {
            const media = await client.downloadAndSaveMediaMessage(m)
            readTextInImage(media)
                .then(data => {
-                   client.sendMessage(id, `*Hola amigo el texto de la imagem esta aqui.* \n\nResultado:: \n\n${data}`, MessageType.text);
+                   client.sendMessage(id, `*El texto de la imagem esta aqui.* \n\nResultado:: \n\n${data}`, MessageType.text);
                })
                .catch(err => {
                    console.log(err)
@@ -454,7 +454,7 @@ case 'puisi2':
            infogempa()
                .then(data => {
                    const { lokasi, kedalaman, koordinat, magnitude, waktu } = data
-                   let hasil = `*INFO LUGAR* \n\ *Locacion* : _${lokasi}_ \n *Profundidad* : _${kedalaman}_ \n *Coordenadas* : _${koordinat}_ \n *Magnitude* : _${magnitude}_ \n *Hora* : _${waktu}_`
+                   let hasil = `*INFO. LUGAR* \n\ *Locacion* : _${lokasi}_ \n *Profundidad* : _${kedalaman}_ \n *Coordenadas* : _${koordinat}_ \n *Magnitude* : _${magnitude}_ \n *Hora* : _${waktu}_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -564,7 +564,7 @@ case 'spamgmail':
            infoanime(value)
                .then(data => {
                    const { result } = data
-                   let hasil = `*INFO ANIME ${value} :* \n\n _${result}_  `
+                   let hasil = `*INFO. ANIME ${value} :* \n\n _${result}_  `
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -751,7 +751,7 @@ case 'filmanime':
                })
            break
           case 'creator':
-            client.sendContact(from, '6285722553839@c.us')
+            client.sendContact(from, 'wa.me/529991256032')
             break
       case 'tts':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!tts [id, en, jp, ar] [teks]*, contoh *!tts id halo semua*')
