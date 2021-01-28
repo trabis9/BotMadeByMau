@@ -8,7 +8,7 @@
  
 </details>
 
-### Atencion!! TRADUCIDO POR SAMU330
+### Atencion!! TRADUCIDO POR MAU
 ¿QUIERES VOLVER A CARGAR EL SCRIPT? AMO MI NOMBRE / ENLACE CHANEL .... NO CAMBIE LA INFORMACIÓN !!!
 
 ## NOTA:>
@@ -40,7 +40,7 @@ INSTALACIÓN:
 
 ## CARACTERÍSTICAS  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
 
-| SAMUBOT      |                   Característica        |
+| BOT BY MAU  |                   Característica        |
 | :-----------: | :------------------------------: |
 |       ✅       | Criador de adesivos                  |
 |       ✅       | Nulis                            |
@@ -77,7 +77,7 @@ INSTALACIÓN:
 |       ✅       | 18+.                             |
 |       ✅       | MAIS recursos em breve 🍂        |
 
-SAMU330 DOMINA 🐦❤️
+MAU DOMINA 🐦❤️
 
 <img src="https://scontent.fmid4-1.fna.fbcdn.net/v/t1.0-0/c0.4.480.480a/s526x395/103469528_154803396087710_914979189346976214_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeH6aagqAsn6T-BjWoA7MHDXU3lPJA6SwrxTeU8kDpLCvDTL1FWk8WJk_fN1Rqpv1GV48g1i_b9jMktxWqcHo9Y_&_nc_ohc=Ypqe--e3FZIAX_D18qc&_nc_ht=scontent.fmid4-1.fna&tp=28&oh=ba6e218586d63ee9771bfb3bb58b0d27&oe=6008A584" alt="Samu330" width="300" />
 
